@@ -14,13 +14,13 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "baseUrl": ".",
-    "paths": {
-      "components/*": ["components/*"],
-      "utils/*": ["utils/*"]
-    },
+        "paths": {
+            "components/*": ["components/*"],
+            "utils/*": ["utils/*"]
+        },
         "plugins": [
             {
-            "name": "next"
+                "name": "next"
             }
         ]
     },

@@ -1,7 +1,7 @@
 'use client';
 
 import { memo, useEffect, useState, useRef, useCallback } from 'react';
-import { Card } from './card.jsx';
+import { Card } from './card';
 import { useSession } from '../contexts/SessionContext';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -1196,8 +1196,8 @@ const TimerComponent: React.FC = () => {
     // --- Render ---
     return (
         <div className="w-full space-y-6">
-<Card title="Timer" className="flex items-center justify-center p-4">
-<div ref={mountRef} className="w-full max-w-4xl relative" style={{ aspectRatio: '800/550' }}></div>
+            <Card title="" className="flex items-center justify-center p-4">
+                <div ref={mountRef} className="w-full max-w-4xl relative" style={{ aspectRatio: '800/550' }}></div>
             </Card>
         </div>
     );
