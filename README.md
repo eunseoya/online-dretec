@@ -1,41 +1,28 @@
-# Next.js on Netlify Platform Starter
+# dretec online timer
 
-[Live Demo](https://nextjs-platform-starter.netlify.app/)
+This project is an interactive, web-based timer and stopwatch inspired by Dretec's physical timers. The main feature is a visually rich, 3D timer interface built with React and Three.js, providing an experience similar to using a real Dretec timer.
 
-A modern starter based on Next.js 14 (App Router), Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+## Features
 
-In this site, Netlify Core Primitives are used both implictly for running Next.js features (e.g. Route Handlers, image optimization via `next/image`, and more) and also explicitly by the user code.
+- **3D Timer UI**: Realistic timer interface rendered with Three.js, including buttons, display, and indicator lights.
+- **Multiple Modes**: Switch between clock, countdown timer, and stopwatch (with h:m:s and ms formats).
+- **Session Logging**: Log completed timer/stopwatch sessions, view history, and clear or remove individual logs.
+- **Responsive Design**: Works well on both desktop and mobile browsers.
+- **Customizable**: Easily extendable for new features or timer types.
 
-Implicit usage means you're using any Next.js functionality and everything "just works" when deployed - all the plumbing is done for you. Explicit usage is framework-agnostic and typically provides more features than what Next.js exposes.
+## Usage
 
-## Deploying to Netlify
+1. **Timer/Stopwatch**: Use the 3D interface to set time, start/stop, and reset. The display updates in real time.
+2. **Mode Switching**: Use the mode buttons to toggle between clock, timer, and stopwatch.
+3. **Logging**: After a session, log the result for later review. View your session history in the app.
 
-This site requires [Netlify Next Runtime v5](https://docs.netlify.com/frameworks/next-js/overview/) for full functionality. That version is now being gradually rolled out to all Netlify accounts.
+## Technologies
 
-After deploying via the button below, please visit the **Site Overview** page for your new site to check whether it is already using the v5 runtime. If not, you'll be prompted to opt-in to to v5.
+- **React**: UI framework for building the app.
+- **Three.js**: 3D rendering for the timer interface.
+- **Next.js**: App framework for routing and server-side rendering.
+- **Context API**: For session and state management.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-platform-starter)
+## Credits
 
-## Developing Locally
-
-1. Clone this repository, then run `npm install` in its root directory.
-
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
-
-```
-npm install netlify-cli@latest -g
-```
-
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
-
-```
-netlify link
-```
-
-4. Then, run the Next.js development server via Netlify CLI:
-
-```
-netlify dev
-```
-
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+- Dretec for design inspiration
